@@ -1,110 +1,82 @@
 ﻿@model _04_Data.Datos.pelicula
-<div>
-    <h4>pelicula</h4>
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container-fluid py-10">
+    <h4 style="font-family: 'Neue Haas Grotesk Text Pro'; font-size:30px; text-align:center;  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87">@Html.DisplayFor(model => model.titulo)</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.titulo)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.titulo)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.añolanzamiento)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.añolanzamiento)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.sinopsis)
-        </dt>
+    <div style="font-size: 15px; text-align:center">
 
-        <dd>
-            @Html.DisplayFor(model => model.sinopsis)
-        </dd>
+        <span>Fecha de lanzamiento:</span>
+        <span>@Html.DisplayFor(model => model.añolanzamiento)</span>
+        <br />
+        <span>Duración:</span>
+        <span>@Html.DisplayFor(model => model.duracion)</span>
+        <br />
+        <span>Clasificación:</span>
+        <span>@Html.DisplayFor(model => model.clasificacion)</span>
+        <br />
+        <span>Presupuesto:</span>
+        <span>@Html.DisplayFor(model => model.presupuesto)</span>
+        <br />
+        <span>Recaudación:</span>
+        <span>@Html.DisplayFor(model => model.recaudacion)</span>
+        <br />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.premios)
-        </dt>
+        @*@Html.DisplayFor(model => model.añolanzamiento)
 
-        <dd>
-            @Html.DisplayFor(model => model.premios)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.duracion)
-        </dt>
+        @Html.DisplayFor(model => model.sinopsis)
 
-        <dd>
-            @Html.DisplayFor(model => model.duracion)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.clasificacion)
-        </dt>
+        @Html.DisplayFor(model => model.premios)
 
-        <dd>
-            @Html.DisplayFor(model => model.clasificacion)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.presupuesto)
-        </dt>
+        @Html.DisplayFor(model => model.duracion)
 
-        <dd>
-            @Html.DisplayFor(model => model.presupuesto)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.recaudacion)
-        </dt>
+        @Html.DisplayFor(model => model.clasificacion)
 
-        <dd>
-            @Html.DisplayFor(model => model.recaudacion)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.actor.actor_principal)
-        </dt>
+        @Html.DisplayFor(model => model.presupuesto)
 
-        <dd>
-            @Html.DisplayFor(model => model.actor.actor_principal)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.companyia.nombre)
-        </dt>
+        @Html.DisplayFor(model => model.recaudacion)
 
-        <dd>
-            @Html.DisplayFor(model => model.companyia.nombre)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.director.nombre)
-        </dt>
+        @Html.DisplayFor(model => model.actor.actor_principal)
 
-        <dd>
-            @Html.DisplayFor(model => model.director.nombre)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.genero.nombre)
-        </dt>
+        @Html.DisplayFor(model => model.companyia.nombre)
 
-        <dd>
-            @Html.DisplayFor(model => model.genero.nombre)
-        </dd>
 
-    </dl>
+        @Html.DisplayFor(model => model.director.nombre)
+
+
+        @Html.DisplayFor(model => model.genero.nombre)*@
+
+    </div>
+
+
+    
+
+
 </div>
 @{
     string onClickAnterior = "pelicula(" + Model.id + "," + 0 + ")";
     string onClickSiguiente = "pelicula(" + Model.id + "," + 1 + ")";
 }
-<input type="button" value="Anterior" onclick=@onClickAnterior>
-<input type="button" value="Siguiente" onclick=@onClickSiguiente>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <input class="btn btn-transparent smooth-scroll;" style="border-width: 2px; float: left; font-size: 12px; border-color: aqua" value="Anterior" onclick=@onClickAnterior>
+            <input class="btn btn-transparent smooth-scroll;" style="border-width: 2px; float: right; font-size: 12px; border-color: aqua" value="Siguiente" onclick=@onClickSiguiente>
+        </div>
+    </div>
+</div>
 
