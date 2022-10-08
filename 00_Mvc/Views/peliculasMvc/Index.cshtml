@@ -4,96 +4,236 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+@*<h2>Index</h2>*@
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+<section class="portfolio section" id="portfolio">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12">
+<!-- section title -->
+                <div class="title text-center">
+                    <h2>Peliculas <em style="font-family: 'Neue Haas Grotesk Text Pro'; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87">MARVEL</em></h2>
+                    <div class="border"></div>
+                </div>
+<!-- /section title -->
+            </div> <!-- /end col-lg-12 -->
+        </div> <!-- end row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="portfolio-filter">
+                    <button class="active" type="button" data-filter="all">All</button>
+                    <button type="button" data-filter="Capitan">Capitán América</button>
+                    <button type="button" data-filter="Capitana">Capitana Marvel</button>
+                    <button type="button" data-filter="Iron">Iron Man</button>
+                    <button type="button" data-filter="Thor">Thor</button>
+                    <button type="button" data-filter="Hulk">Hulk</button>
+                    <button type="button" data-filter="Guardianes">Guardianes de la Galaxia</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto filtr-container">
+            <div class="filtr-item col-lg-4 col-md-6" data-category="Capitan">
+                <div class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/capitanamerica.jpg">
+                    <img style="width:90%" src="~/Content/images/capitanamerica.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/capitanamerica.jpg">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a>Capitán América</a></h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="filtr-item col-lg-4 col-md-6" data-category="Capitana">
+                <div class="portfolio-block">
+                    <img style="width:87%" src="~/Content/images/capitanamarvel.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/capitanamarvel.jpg">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a>Capitana Marvel</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="filtr-item col-lg-4 col-md-6" data-category="Iron">
+                <div class="portfolio-block">
+                    <img style="width:100%" src="~/Content/images/ironman.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/ironman.jpg"
+                           data-lightbox="image-1">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a href="~/Content/images/ironman.jpg">Iron Man</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="filtr-item col-lg-4 col-md-6" data-category="Thor">
+                <div class="portfolio-block">
+                    <img style="width:300px" src="~/Content/images/thor.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/thor.jpg"
+                           data-lightbox="image-1">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a href="~/Content/images/thor.jpg">Thor</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="filtr-item col-lg-4 col-md-6" data-category="Hulk">
+                <div class="portfolio-block">
+                    <img style="width:300px" src="~/Content/images/hulk.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/hulk.jpg"
+                           data-lightbox="image-1">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a href="~/Content/images/hulk.jpg">Hulk</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="filtr-item col-lg-4 col-md-6" data-category="Guardianes">
+                <div class="portfolio-block">
+                    <img style="width:300px" src="~/Content/images/guardianes.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/guardianes.jpg"
+                           data-lightbox="image-1">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a href="~/Content/images/guardianes.jpg">Guardianes de la Galaxia</a></h4>
+                    </div>
+                </div>
+            </div>
+            @*<div class="filtr-item col-lg-4 col-md-6" data-category="Capitan">
+                <div class="portfolio-block">
+                  
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" src="~/Content/images/capitanamerica.jpg"
+                           data-lightbox="image-1">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a href="">Tag Design</a></h4>
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filtr-item col-lg-4 col-md-6" data-category="design">
+                <div class="portfolio-block">
+                    <img src="images/portfolio/portfolio-8.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-8.jpg"
+                           data-lightbox="image-1">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a href="">Stationary Design</a></h4>
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filtr-item col-lg-4 col-md-6" data-category="photography, development">
+                <div class="portfolio-block">
+                    <img src="images/portfolio/portfolio-1.jpg" alt="">
+                    <div class="caption">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-1.jpg"
+                           data-lightbox="image-1">
+                            <i class="tf-ion-android-search"></i>
+                        </a>
+                        <h4><a href="">Tag Design</a></h4>
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+    </div> <!-- end container -->
+</section> <!-- End section -->
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.titulo)
+@Html.DisplayNameFor(model => model.titulo)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.añolanzamiento)
+@Html.DisplayNameFor(model => model.añolanzamiento)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.sinopsis)
+@Html.DisplayNameFor(model => model.sinopsis)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.premios)
+@Html.DisplayNameFor(model => model.premios)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.duracion)
+@Html.DisplayNameFor(model => model.duracion)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.clasificacion)
+@Html.DisplayNameFor(model => model.clasificacion)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.presupuesto)
+@Html.DisplayNameFor(model => model.presupuesto)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.recaudacion)
+@Html.DisplayNameFor(model => model.recaudacion)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.actor.actor_principal)
+@Html.DisplayNameFor(model => model.actor.actor_principal)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.companyia.nombre)
+@Html.DisplayNameFor(model => model.companyia.nombre)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.director.nombre)
+@Html.DisplayNameFor(model => model.director.nombre)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.genero.nombre)
+@Html.DisplayNameFor(model => model.genero.nombre)
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.titulo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.añolanzamiento)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.sinopsis)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.premios)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.duracion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.clasificacion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.presupuesto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.recaudacion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.actor.actor_principal)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.companyia.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.director.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.genero.nombre)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
-            @Html.ActionLink("Details", "Details", new { id = item.id }) |
-            @Html.ActionLink("DetailsAjax", "DetailsAjax", new { id = item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.id })
-        </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.titulo)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.añolanzamiento)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.sinopsis)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.premios)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.duracion)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.clasificacion)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.presupuesto)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.recaudacion)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.actor.actor_principal)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.companyia.nombre)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.director.nombre)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.genero.nombre)
+    </td>
+    <td>
+    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+    @Html.ActionLink("DetailsAjax", "DetailsAjax", new { id = item.id }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+    </td>
     </tr>
 }
 
