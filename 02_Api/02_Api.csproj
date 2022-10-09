@@ -162,6 +162,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\actoresApiController.cs" />
+    <Compile Include="Controllers\companyiasApiController.cs" />
+    <Compile Include="Controllers\directoresApiController.cs" />
+    <Compile Include="Controllers\frasesApiController.cs" />
+    <Compile Include="Controllers\generosApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\peliculasApiController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />

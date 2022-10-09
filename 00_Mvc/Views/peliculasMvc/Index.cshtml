@@ -1,27 +1,121 @@
 ﻿@model IEnumerable<_04_Data.Datos.pelicula>
 
 @{
-    ViewBag.Title = "Index";
-}
+    ViewBag.Title = "Index";}
 
 @*<h2>Index</h2>*@
 
 @*<p>
         @Html.ActionLink("Create New", "Create")
     </p>*@
-<section class="portfolio section" id="portfolio">
+<section id="peliculas" class="bg-one section">
     <div class="container">
-        <div class="row ">
+        <div class="row">
+
             <div class="col-lg-12">
-<!-- section title -->
-                <div class="title text-center">
-                    <h2>Peliculas <em style="font-family: 'Neue Haas Grotesk Text Pro'; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87">MARVEL</em></h2>
+                <!-- section title -->
+                <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                    <h2>Peliculas <span style="text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; color:white;">MARVEL</span></h2>
                     <div class="border"></div>
                 </div>
+                <!-- /section title -->
+            </div>
+
+            <!-- Single Service Item -->
+            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <img src="~/Content/images/capitanamerica.jpg" style="width:80%" />
+                    </div>
+                    <h3>Capitán América: El primer Vengador</h3>
+                    <p>
+                        Tras tres meses de someterse a un programa de entrenamiento físico y táctico, Steve Rogers es encomendado su primera misión como Capitán América. Armado con un escudo indestructible, emprenderá la guerra contra el Mal como líder de los Vengadores
+                    </p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+            <!-- Single Service Item -->
+            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <img src="~/Content/images/capitanamarvel.jpg" style="width:78%" />
+                    </div>
+                    <h3>Capitana Marvel</h3>
+                    <p>
+                        La guerrera Vers no recuerda su pasado, el cual vuelve a ella en sueños. A pesar de sus problemas para controlar sus emociones y, con ellas, sus poderes, la Inteligencia Suprema le permite participar en una misión.
+                    </p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+            <!-- Single Service Item -->
+            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <img src="~/Content/images/ironman.jpg" style="width:92%" />
+                    </div>
+                    <h3>Iron Man</h3>
+                    <p>
+                        Tony Stark es un inventor de armamento brillante que es secuestrado en el extranjero. Sus captores son unos terroristas que le obligan a construir una máquina destructiva pero Tony se construirá una armadura para poder enfrentarse a ellos y escapar
+                    </p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+            <!-- Single Service Item -->
+            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <img src="~/Content/images/hulk.jpg" style="width:80%" />
+                    </div>
+                    <h3>The Incredible Hulk</h3>
+                    <p>
+                        Bruce Banner recorre el mundo en busca de un antídoto para librarse de su alter ego. Además tendrá que hacer frente a Emil, un nuevo enemigo, lo que convertirá a Nueva York en el escenario de la última batalla entre las dos criaturas más poderosas.
+                    </p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+            <!-- Single Service Item -->
+            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                <div class="service-block text-center">
+                    <div class="service-icon text-center">
+                        <img src="~/Content/images/thor.jpg" style="width:86%" />
+                    </div>
+                    <h3>Thor</h3>
+                    <p>
+                        Tras desatar una antigua guerra, el codicioso guerrero Thor es desterrado a la Tierra por su padre para que viva entre los hombres y descubra así el verdadero sentido de la humildad.
+                    </p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+            <!-- Single Service Item -->
+            <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+                <div class="service-block text-center kill-margin-bottom">
+                    <div class="service-icon text-center">
+                        <img src="~/Content/images/guardianes.jpg" style="width:80%" />
+                    </div>
+                    <h3>Guardianes de la Galaxia</h3>
+                    <p>
+                        El temerario aventurero Peter Quill, tras robar una misteriosa esfera codiciada por Ronan, un poderoso villano cuyas ambiciones amenazan a todo el universo, se convierte en la presa más codiciada por todos los cazarrecompensas de la galaxia.
+                    </p>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+        </div> <!-- End row -->
+    </div> <!-- End container -->
+</section>
+<!--<section class="portfolio section" id="portfolio">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12">-->
+<!-- section title -->
+                <!--<div class="title text-center">
+                    <h2>Peliculas <em style="font-family: 'Neue Haas Grotesk Text Pro'; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87">MARVEL</em></h2>
+                    <div class="border"></div>
+                </div>-->
 <!-- /section title -->
-            </div> <!-- /end col-lg-12 -->
-        </div> <!-- end row -->
-        <div class="row">
+            <!--</div>--> <!-- /end col-lg-12 -->
+        <!--</div>--> <!-- end row -->
+        <!--<div class="row">
             <div class="col-md-12">
                 <div class="portfolio-filter">
                     <button class="active" type="button" data-filter="all">All</button>
@@ -36,37 +130,19 @@
         </div>
         <div class="row mx-auto filtr-container">
             <div class="filtr-item col-lg-4 col-md-6" data-category="Capitan">
-                <div class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/capitanamerica.jpg">
+                <div class="" data-effect="mfp-with-zoom" href="~/Content/images/capitanamerica.jpg">
                     <img style="width:90%" src="~/Content/images/capitanamerica.jpg" alt="">
-                    <div class="caption">
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/capitanamerica.jpg">
-                            <i class="tf-ion-android-search"></i>
-                        </a>
-                        <h4><a>Capitán América</a></h4>
-                        
-                    </div>
                 </div>
             </div>
             <div class="filtr-item col-lg-4 col-md-6" data-category="Capitana">
-                <div class="portfolio-block">
+                <div class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/capitanamarvel.jpg">
                     <img style="width:87%" src="~/Content/images/capitanamarvel.jpg" alt="">
-                    <div class="caption">
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/capitanamarvel.jpg">
-                            <i class="tf-ion-android-search"></i>
-                        </a>
-                        <h4><a>Capitana Marvel</a></h4>
-                    </div>
                 </div>
             </div>
             <div class="filtr-item col-lg-4 col-md-6" data-category="Iron">
-                <div class="portfolio-block">
+                <div class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/ironman.jpg">
                     <img style="width:100%" src="~/Content/images/ironman.jpg" alt="">
                     <div class="caption">
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="~/Content/images/ironman.jpg"
-                           data-lightbox="image-1">
-                            <i class="tf-ion-android-search"></i>
-                        </a>
-                        <h4><a href="~/Content/images/ironman.jpg">Iron Man</a></h4>
                     </div>
                 </div>
             </div>
@@ -106,85 +182,41 @@
                     </div>
                 </div>
             </div>
-            @*<div class="filtr-item col-lg-4 col-md-6" data-category="Capitan">
-                <div class="portfolio-block">
-                  
-                    <div class="caption">
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" src="~/Content/images/capitanamerica.jpg"
-                           data-lightbox="image-1">
-                            <i class="tf-ion-android-search"></i>
-                        </a>
-                        <h4><a href="">Tag Design</a></h4>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="filtr-item col-lg-4 col-md-6" data-category="design">
-                <div class="portfolio-block">
-                    <img src="images/portfolio/portfolio-8.jpg" alt="">
-                    <div class="caption">
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-8.jpg"
-                           data-lightbox="image-1">
-                            <i class="tf-ion-android-search"></i>
-                        </a>
-                        <h4><a href="">Stationary Design</a></h4>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="filtr-item col-lg-4 col-md-6" data-category="photography, development">
-                <div class="portfolio-block">
-                    <img src="images/portfolio/portfolio-1.jpg" alt="">
-                    <div class="caption">
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-1.jpg"
-                           data-lightbox="image-1">
-                            <i class="tf-ion-android-search"></i>
-                        </a>
-                        <h4><a href="">Tag Design</a></h4>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
-                    </div>
-                </div>
-            </div>*@
         </div>
-    </div> <!-- end container -->
-</section> <!-- End section -->
-<table class="table">
+    </div> 
+    
+</section>--> <!-- End section -->
+<table class="table" style="font-size:12px">
     <tr>
         <th>
-@Html.DisplayNameFor(model => model.titulo)
+            <h3>Titulo</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.añolanzamiento)
+            <h3>Estreno</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.sinopsis)
+            <h3>Sinopsis</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.premios)
+            <h3>Duración</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.duracion)
+            <h3>Clasificación</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.clasificacion)
+            <h3>Presupuesto</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.presupuesto)
+            <h3>Recaudación</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.recaudacion)
+            <h3>Protagonista</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.actor.actor_principal)
+            <h3>Compañia</h3>
         </th>
         <th>
-@Html.DisplayNameFor(model => model.companyia.nombre)
-        </th>
-        <th>
-@Html.DisplayNameFor(model => model.director.nombre)
-        </th>
-        <th>
-@Html.DisplayNameFor(model => model.genero.nombre)
+            <h3>Director</h3>
         </th>
         <th></th>
     </tr>
@@ -200,9 +232,6 @@
     </td>
     <td>
     @Html.DisplayFor(modelItem => item.sinopsis)
-    </td>
-    <td>
-    @Html.DisplayFor(modelItem => item.premios)
     </td>
     <td>
     @Html.DisplayFor(modelItem => item.duracion)
@@ -226,10 +255,7 @@
     @Html.DisplayFor(modelItem => item.director.nombre)
     </td>
     <td>
-    @Html.DisplayFor(modelItem => item.genero.nombre)
-    </td>
-    <td>
-    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = item}) |
     @Html.ActionLink("Details", "Details", new { id = item.id }) |
     @Html.ActionLink("DetailsAjax", "DetailsAjax", new { id = item.id }) |
     @Html.ActionLink("Delete", "Delete", new { id = item.id })

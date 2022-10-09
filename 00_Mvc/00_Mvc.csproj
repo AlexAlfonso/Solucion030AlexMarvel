@@ -127,6 +127,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\actoresMvcController.cs" />
+    <Compile Include="Controllers\companyiasMvcController.cs" />
+    <Compile Include="Controllers\directoresMvcController.cs" />
+    <Compile Include="Controllers\frasesMvcController.cs" />
+    <Compile Include="Controllers\generosMvcController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\peliculasMvcController.cs" />
     <Compile Include="Global.asax.cs">
@@ -276,6 +281,31 @@
     <Content Include="Scripts\plugins\themefisher-font\fonts\themefisher-font.eot" />
     <Content Include="Scripts\plugins\themefisher-font\fonts\themefisher-font.ttf" />
     <Content Include="Scripts\plugins\themefisher-font\fonts\themefisher-font.woff" />
+    <Content Include="Views\actoresMvc\Create.cshtml" />
+    <Content Include="Views\actoresMvc\Delete.cshtml" />
+    <Content Include="Views\actoresMvc\Details.cshtml" />
+    <Content Include="Views\actoresMvc\Edit.cshtml" />
+    <Content Include="Views\actoresMvc\Index.cshtml" />
+    <Content Include="Views\companyiasMvc\Create.cshtml" />
+    <Content Include="Views\companyiasMvc\Delete.cshtml" />
+    <Content Include="Views\companyiasMvc\Details.cshtml" />
+    <Content Include="Views\companyiasMvc\Edit.cshtml" />
+    <Content Include="Views\companyiasMvc\Index.cshtml" />
+    <Content Include="Views\directoresMvc\Create.cshtml" />
+    <Content Include="Views\directoresMvc\Delete.cshtml" />
+    <Content Include="Views\directoresMvc\Details.cshtml" />
+    <Content Include="Views\directoresMvc\Edit.cshtml" />
+    <Content Include="Views\directoresMvc\Index.cshtml" />
+    <Content Include="Views\frasesMvc\Create.cshtml" />
+    <Content Include="Views\frasesMvc\Delete.cshtml" />
+    <Content Include="Views\frasesMvc\Details.cshtml" />
+    <Content Include="Views\frasesMvc\Edit.cshtml" />
+    <Content Include="Views\frasesMvc\Index.cshtml" />
+    <Content Include="Views\generosMvc\Create.cshtml" />
+    <Content Include="Views\generosMvc\Delete.cshtml" />
+    <Content Include="Views\generosMvc\Details.cshtml" />
+    <Content Include="Views\generosMvc\Edit.cshtml" />
+    <Content Include="Views\generosMvc\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
