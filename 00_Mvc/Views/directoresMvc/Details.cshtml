@@ -1,17 +1,14 @@
 ﻿@model _04_Data.Datos.director
 
-@{
-    ViewBag.Title = "Details";
-}
 
-<h2>Details</h2>
 
-<div>
-    <h4>director</h4>
+<br />
+<div style="font-size:20px">
+    <h1 style="text-align:center; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; color:white;">Detalles del Director</h1>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.nombre)
+            Director
         </dt>
 
         <dd>
@@ -19,7 +16,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.fecha_nacimiento)
+            Fecha de nacimiento
         </dt>
 
         <dd>
@@ -27,7 +24,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.residencia)
+            Residencia
         </dt>
 
         <dd>
@@ -35,7 +32,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.premios)
+            Premios
         </dt>
 
         <dd>
@@ -43,24 +40,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.distinciones)
+            Distinciones
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.distinciones)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.foto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.foto)
-        </dd>
-
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

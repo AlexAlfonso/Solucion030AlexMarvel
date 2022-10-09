@@ -1,18 +1,18 @@
 ﻿@model _04_Data.Datos.actor
 
-@{
-    ViewBag.Title = "Delete";
-}
+@*@{
+        ViewBag.Title = "Delete";
+    }*@
 
-<h2>Delete</h2>
+<br />
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>actor</h4>
+<div class="form-horizontal" style="font-size:20px">
+
+    <h1 style="text-align:center; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; color:white;">Actor a borrar, ¿seguro?</h1>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.actor_principal)
+            Actor
         </dt>
 
         <dd>
@@ -20,7 +20,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.fecha_nacimiento)
+            Fecha de Nacimiento
         </dt>
 
         <dd>
@@ -28,7 +28,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.años_activo)
+            Años en activo
         </dt>
 
         <dd>
@@ -36,7 +36,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.ocupacion)
+            Ocupación
         </dt>
 
         <dd>
@@ -44,28 +44,21 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.premios)
+            Premios
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.premios)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.foto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.foto)
-        </dd>
-
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="submit" value="Delete" class="btn btn-default" style="font-size:20px"/> |
             @Html.ActionLink("Back to List", "Index")
         </div>
     }

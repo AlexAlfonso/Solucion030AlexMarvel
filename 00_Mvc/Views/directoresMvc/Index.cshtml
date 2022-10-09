@@ -5,13 +5,23 @@
 }
 
 <div class="container">
+    <br />
+    <div class="col-lg-12">
+        <!-- section title -->
+        <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+            <h2>Directores <span style="text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; color:white;">MARVEL</span></h2>
+            <div class="border"></div>
+        </div>
+        <!-- /section title -->
+    </div>
+    <br />
     <div class="row">
         <div class="col-lg-12">
             <div class="alex">
                 <div class="owl-features owl-carousel" style="text-align:center">
                     @foreach (var item in Model)
                     {
-
+                        <br />
                         <div class="item">
                             <h4 style=" text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; font-size: 20px; color: white;">@Html.DisplayFor(modelItem => item.nombre)<br></h4>
                             <br /><br />
