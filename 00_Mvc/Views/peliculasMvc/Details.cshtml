@@ -4,14 +4,14 @@
     ViewBag.Title = "Details";
 }*@
 
-<h2>Details</h2>
 
-<div>
-    <h4>pelicula</h4>
+<br />
+<div style="font-size:20px">
+    <h1 style="text-align:center; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; color:white;">Detalles Pelicula</h1>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.titulo)
+            Titulo
         </dt>
 
         <dd>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.añolanzamiento)
+            Estreno
         </dt>
 
         <dd>
@@ -27,7 +27,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.sinopsis)
+            Sinopsis
         </dt>
 
         <dd>
@@ -35,15 +35,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.premios)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.premios)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.duracion)
+            Duración
         </dt>
 
         <dd>
@@ -51,7 +43,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.clasificacion)
+            Clasificación
         </dt>
 
         <dd>
@@ -59,7 +51,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.presupuesto)
+            Presupuesto
         </dt>
 
         <dd>
@@ -67,7 +59,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.recaudacion)
+            Recaudación
         </dt>
 
         <dd>
@@ -75,7 +67,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.actor.actor_principal)
+            Actor principal
         </dt>
 
         <dd>
@@ -83,7 +75,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.companyia.nombre)
+            Compañia
         </dt>
 
         <dd>
@@ -91,20 +83,14 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.director.nombre)
+            Director
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.director.nombre)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.genero.nombre)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.genero.nombre)
-        </dd>
+        
 
     </dl>
 </div>
