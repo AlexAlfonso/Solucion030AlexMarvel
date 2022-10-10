@@ -1,11 +1,11 @@
-﻿@model _04_Data.Datos.pelicula
+﻿@model _04_Data.Datos.actor
 
 @{
     ViewBag.Title = "Details";
 }
 <div class="container-fluid py-10">
     <br /><br /><br /><br />
-    <h4 style="font-family: 'Neue Haas Grotesk Text Pro'; font-size:30px; text-align:center;  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87">@Html.DisplayFor(model => model.titulo)</h4>
+    <h4 style="font-family: 'Neue Haas Grotesk Text Pro'; font-size:30px; text-align:center;  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87">@Html.DisplayFor(model => model.actor_principal)</h4>
     <hr />
 
 
@@ -13,33 +13,31 @@
 
     <div style="font-size: 15px; text-align:center">
 
-        <span>Fecha de lanzamiento:</span>
-        <span>@Html.DisplayFor(model => model.añolanzamiento)</span>
+        
+        <span>Fecha de Nacimiento:</span>
+        <span>@Html.DisplayFor(model => model.fecha_nacimiento)</span>
         <br />
-        <span>Duración:</span>
-        <span>@Html.DisplayFor(model => model.duracion)</span>
+        <span>Años en Activo:</span>
+        <span>@Html.DisplayFor(model => model.años_activo)</span>
         <br />
-        <span>Clasificación:</span>
-        <span>@Html.DisplayFor(model => model.clasificacion)</span>
+        <span>Pcupación:</span>
+        <span>@Html.DisplayFor(model => model.ocupacion)</span>
         <br />
-        <span>Presupuesto:</span>
-        <span>@Html.DisplayFor(model => model.presupuesto)</span>
-        <br />
-        <span>Recaudación:</span>
-        <span>@Html.DisplayFor(model => model.recaudacion)</span>
+        <span>Premios:</span>
+        <span>@Html.DisplayFor(model => model.premios)</span>
         <br />
 
-       
+
     </div>
 
 
-    
+
 
 
 </div>
 @{
-    string onClickAnterior = "pelicula(" + Model.id + "," + 0 + ")";
-    string onClickSiguiente = "pelicula(" + Model.id + "," + 1 + ")";
+    string onClickAnterior = "actor(" + Model.id + "," + 0 + ")";
+    string onClickSiguiente = "actor(" + Model.id + "," + 1 + ")";
 }
 <div class="container">
     <div class="row">
@@ -49,7 +47,9 @@
         </div>
     </div>
 </div>
-<br /><br /><br />
+<br />
+<br />
+<br />
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -59,7 +59,6 @@
     </div>
 </div>
 
-@{ 
+@{
     Layout = null;
 }
-

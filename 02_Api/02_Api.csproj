@@ -230,6 +230,11 @@
     <Content Include="Views\peliculasApi\Details.cshtml" />
     <Content Include="Views\peliculasApi\Edit.cshtml" />
     <Content Include="Views\peliculasApi\Index.cshtml" />
+    <Content Include="Views\actoresApi\Index.cshtml" />
+    <Content Include="Views\actoresApi\Edit.cshtml" />
+    <Content Include="Views\actoresApi\Details.cshtml" />
+    <Content Include="Views\actoresApi\Delete.cshtml" />
+    <Content Include="Views\actoresApi\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

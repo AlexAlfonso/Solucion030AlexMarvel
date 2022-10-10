@@ -34,6 +34,44 @@ namespace _02_Api.Controllers
 
             return Ok(actor);
         }
+        [ResponseType(typeof(actor))]
+        public IHttpActionResult Getactor(int? id, int? siguiente)
+        {
+            actor actorTabla = null;
+            if (siguiente == null)
+            {
+                actorTabla = db.actor.Where(x => x.id == id.Value).FirstOrDefault();
+            }
+            else
+            {
+                if (siguiente.Value == 1)
+                {
+                    actorTabla = db.actor.Where(x => x.id > id.Value).FirstOrDefault();
+                }
+                else
+                {
+                    IList<actor> actorTablas = db.actor.Where(x => x.id < id.Value).ToList();
+                    if (actorTablas != null && actorTablas.Count() > 0)
+                    {
+                        int? idactor = actorTablas.Max(x => x.id);
+                        actorTabla = db.actor.Where(x => x.id == idactor.Value).FirstOrDefault();
+                    }
+                }
+            }
+            if (actorTabla == null)
+            {
+                actorTabla = db.actor.Where(x => x.id == id.Value).FirstOrDefault();
+            }
+            actor actor = new actor();
+            actor.id = actorTabla.id;
+            actor.actor_principal = actorTabla.actor_principal;
+            actor.fecha_nacimiento = actorTabla.fecha_nacimiento;
+            actor.años_activo = actorTabla.años_activo;
+            actor.ocupacion = actorTabla.ocupacion;
+            actor.premios = actorTabla.premios;
+
+            return Ok(actor);
+        }
 
         // PUT: api/actoresApi/5
         [ResponseType(typeof(void))]

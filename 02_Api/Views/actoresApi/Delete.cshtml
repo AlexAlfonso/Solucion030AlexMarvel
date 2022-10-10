@@ -1,0 +1,106 @@
+﻿@model _04_Data.Datos.pelicula
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<br />
+
+<div class="form-horizontal" style="font-size:20px">
+
+    <h1 style="text-align:center; text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; color:white;">Pelicula a borrar, ¿seguro?</h1>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Titulo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titulo)
+        </dd>
+
+        <dt>
+            Estreno
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.añolanzamiento)
+        </dd>
+
+        <dt>
+            Sinopsis
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sinopsis)
+        </dd>
+
+        <dt>
+            Duración
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duracion)
+        </dd>
+
+        <dt>
+            Clasificación
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clasificacion)
+        </dd>
+
+        <dt>
+            Presupuesto
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.presupuesto)
+        </dd>
+
+        <dt>
+            Recaudación
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recaudacion)
+        </dd>
+
+        <dt>
+            Actor principal
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.actor.actor_principal)
+        </dd>
+
+        <dt>
+            Compañia
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.companyia.nombre)
+        </dd>
+
+        <dt>
+            Director
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.director.nombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default"  style="font-size:20px"/> 
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

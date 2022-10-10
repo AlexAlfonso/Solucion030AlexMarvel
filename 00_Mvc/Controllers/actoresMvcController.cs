@@ -35,6 +35,21 @@ namespace _00_Mvc.Controllers
             return View(actor);
         }
 
+        // GET: peliculasMvc/Details/5
+        public ActionResult DetailsAjax(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            actor actor = db.actor.Find(id);
+            if (actor == null)
+            {
+                return HttpNotFound();
+            }
+            return View(actor);
+        }
+
         // GET: actoresMvc/Create
         public ActionResult Create()
         {
@@ -122,6 +137,13 @@ namespace _00_Mvc.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        [HttpPost]
+        //[ValidateInput(false)]
+        public ActionResult _ActoresMvcPartialView(actor actor)
+        {
+            return View("_ActoresMvcPartialView", actor);
         }
     }
 }

@@ -315,6 +315,8 @@
     <Content Include="Views\generosMvc\Details.cshtml" />
     <Content Include="Views\generosMvc\Edit.cshtml" />
     <Content Include="Views\generosMvc\Index.cshtml" />
+    <Content Include="Views\actoresMvc\_ActoresMvcPartialView.cshtml" />
+    <Content Include="Views\actoresMvc\DetailsAjax.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
